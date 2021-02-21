@@ -1,0 +1,173 @@
+/* Code By Webdevtrick ( https://webdevtrick.com ) */
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400');
+
+
+/* FAQ style*/
+#faqp html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#faqp body {
+  text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background: #fff;
+  color: #666;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  width: 100% !important;
+	height: 100% !important;
+}
+/* Header Section */
+
+
+#faqp .intro {
+	display: table;
+	width: 100%;
+	padding: 0;
+
+	background-color:olivedrab;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+#faqp .intro .overlay {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,70ad47+100&0.6+0,0.4+100 */
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(112,173,71,0.4) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(112,173,71,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(112,173,71,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#6670ad47', GradientType=0 ); /* IE6-9 */
+}
+#faqp .intro .fa {
+	font-size: 94px;
+	margin-bottom: 40px;
+	color: #fff;
+}
+#faqp .intro h1 {
+	color: #fff;
+	font-size: 54px;
+	font-weight: 500;
+
+	margin-top: 0;
+	margin-bottom: 10px;
+
+  text-align: center;
+}
+#faqp .intro p {
+	color: #fff;
+	font-size: 22px;
+	margin-top: 20px;
+	line-height: 28px;
+	margin-bottom: 40px;
+}
+#faqp .intro .btn-custom {
+	border-top: 1px solid rgba(255,255,255,0.4);
+	border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+#faqp header .intro-text {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	text-align: center;
+}
+
+
+
+
+#faqp .container {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
+}
+#faqp h3 {
+  font-size: 20px;
+	font-weight: 400;
+	color: #333;
+  padding: 1.3rem;
+  margin: 0;
+}
+#faqp .accordion a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  color: #7288a2;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0 0 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+#faqp .accordion a:hover,
+#faqp .accordion a:hover::after {
+  cursor: pointer;
+  color: green;
+}
+#faqp .accordion a:hover::after {
+  border: 1px solid #ff5353;
+}
+#faqp .accordion a.active {
+  color: #ff5353;
+  border-bottom: 1px solid #ff5353;
+}
+#faqp .accordion a::after {
+  font-family: 'Ionicons';
+  content: '\f218';
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 1rem;
+  color: #7288a2;
+  padding: 5px;
+
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #7288a2;
+  text-align: center;
+}
+#faqp .accordion a.active::after {
+  font-family: 'Ionicons';
+  content: '\f209';
+  color: #ff5353;
+  border: 1px solid #ff5353;
+}
+#faqp .accordion .content {
+  opacity: 0;
+  padding: 0 1rem;
+  max-height: 0;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+  clear: both;
+  -webkit-transition: all 0.2s ease 0.15s;
+  -o-transition: all 0.2s ease 0.15s;
+  transition: all 0.2s ease 0.15s;
+}
+#faqp .accordion .content p {
+  font-size: 20px;
+  font-weight: 300;
+
+}
+#faqp .accordion .content.active {
+  opacity: 1;
+  padding: 1rem;
+  max-height: 100%;
+  -webkit-transition: all 0.35s ease 0.15s;
+  -o-transition: all 0.35s ease 0.15s;
+  transition: all 0.35s ease 0.15s;
+}
