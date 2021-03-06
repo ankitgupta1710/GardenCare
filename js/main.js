@@ -41,7 +41,39 @@ function main() {
       $(".navbar-collapse").collapse('hide');
     }
   });
-	
+    // Selecting Filter 
+    $(window).load(function() {
+      var $container = $('.filter');
+      $container.isotope({
+          filter: '*',
+          animationOptions: {
+              duration: 750,
+              easing: 'linear',
+              queue: false
+          }
+      });
+      $('.sel-filter a').click(function() {
+          $('.sel-filter .active').removeClass('active');
+          $(this).addClass('active');
+          $(this).removeClass('hidden');
+          var selector = $(this).attr('data-filter');
+          $(selector).removeClass('hidden');
+          $container.isotope({
+              filter: selector,
+              animationOptions: {
+                  duration: 750,
+                  easing: 'linear',
+                  queue: false
+              }
+          });
+          return false;
+      });
+
+         
+  });
+
+
+
   	// Portfolio isotope filter
     $(window).load(function() {
         var $container = $('.portfolio-items');
@@ -68,6 +100,22 @@ function main() {
             return false;
         });
 
+        $('.cat .filter-select').on('change',function() {
+          $('.cat .active').removeClass('active');
+          $(this).addClass('active');
+          var selector = this.value;
+          $container.isotope({
+              filter: selector,
+              animationOptions: {
+                  duration: 750,
+                  easing: 'linear',
+                  queue: false
+              }
+          });
+          return false;
+      });
+
+           
     });
 	
     // Nivo Lightbox 

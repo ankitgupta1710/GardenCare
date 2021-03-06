@@ -1,10 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
+  <meta charset="utf-8" />
+  <title>All Articles</title>
+  <meta content="All posts" property="og:title" />
+  <meta content="All posts" property="twitter:title" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+ 
+  <link href="css/articles.css" rel="stylesheet" type="text/css" />
+
+  <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic",
+          "Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic", "Domine:regular,700"
+        ]
+      }
+    });
+  </script>
+ 
+  <script type="text/javascript">
+    ! function (o, c) {
+      var n = c.documentElement,
+        t = " w-mod-";
+      n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className +=
+        t + "touch")
+    }(window, document);
+  </script>
+  
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Articles</title>
+  
   <meta name="description" content="Gardening Guide">
   <meta name="author" content="A&A">
 
@@ -38,12 +66,19 @@
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span
+            class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
         <a class="navbar-brand page-scroll" href="index.html">GardenCare</a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="plants.html" class="page-scroll">PLANTS</a></li>
+          <li>
+            <p> </p>
+          </li>
+          <li><a href="articles.html" class="page-scroll">Articles</a></li>
           <li>
             <p> </p>
           </li>
@@ -55,7 +90,7 @@
           <!-- Search Bar
                  ==========================================-->
           <li><input type="search"></li>
-          <li><a href="#guides" class="page-scroll">Sign In</a></li>
+          <li><a href="login.html" class="page-scroll">Login</a></li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -63,123 +98,101 @@
     <!-- /.container-fluid -->
   </nav>
 
+  <div class="content-wrapper">
+    <div class="w-container">
+      <h1 class="section-header">All Articles</h1>
+      <div class="w-dyn-list">
+        <div role="list" class="w-dyn-items">
+          <div role="listitem" class="w-dyn-item">
+            <div class="post-wrapper">
+              <div><a href="article.html" class="blog-title-link w-inline-block">
+                  <h1 class="blog-title">GARDEN SOIL 101</h1>
+                </a>
+                <div class="post-info-wrapper">
+                  <div class="post-info">March 6, 2021</div>
 
-  <!-- Gallery Section -->
-  <div id="portfolio">
-    <div class="container">
-      <div class="section-title text-center center">
-        <h2>ARTICLES</h2>
-        <hr>
-        <p>Show me your garden and I shall tell you what you are.
-          <br>
-          Alfred Austin
-        </p>
-      </div>
-      <div class="categories">
-        <ul class="cat">
-          <li>
-            <ol class="type">
-              <li><a href="#" data-filter="*" class="active">All</a></li>
-              <li><a href="#" data-filter=".garden">Flowers</a></li>
-              <li><a href="#" data-filter=".planting">fruits</a></li>
-              <li><a href="#" data-filter=".lawn">herbs</a></li>
-              <li><a href="#" data-filter=".garden">indoor</a></li>
-              <li><a href="#" data-filter=".planting">vegetables</a></li>
-            </ol>
-          </li>
-        </ul>
-        <div class="clearfix"></div>
-      </div>
-      <div class="row">
-        <div class="portfolio-items">
-          <div class="col-sm-6 col-md-4 lawn">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/01-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-                  <div class="hover-text">
-                    <h4>Lorem Ipsum</h4>
-                  </div>
-                  <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title">
-                </a> </div>
+                </div>
+                <p class="post-summary">Gardeners often disregard the impact soil has on the health and vigor of their
+                  plants. Soil preparation isn’t the most thrilling aspect of planting a garden, but it’s certainly one
+                  of the most important. If your soil isn’t right, your garden will struggle to reach its full
+                  potential.
+                  <br>“A garden is a reflection of the quality of its soil. Gardens filled with beautiful soil have a
+                  vitality about them that we can almost feel,” says landscape designer and author Jan Johnsen.
+                </p>
+                <a href="article.html" class="button-round w-button">Continue reading →</a>
+              </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 planting">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/02-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-                  <div class="hover-text">
-                    <h4>Adipiscing Elit</h4>
-                  </div>
-                  <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="Project Title">
-                </a> </div>
+          <div role="listitem" class="w-dyn-item">
+            <div class="post-wrapper">
+              <div><a href="article.html" class="blog-title-link w-inline-block">
+                  <h1 class="blog-title">TRANSFORMING A SMALL GARDEN: 7 SIMPLE STEPS</h1>
+                </a>
+                <div class="post-info-wrapper">
+                  <div class="post-info">March 5, 2021</div>
+
+                </div>
+                <p class="post-summary">“I knew the space needed strong lines to contain the chaos of my perennial beds.
+                  I trial a lot of plants before using them in a client’s garden, so I’m constantly replanting. I also
+                  needed a space that was flexible and that would look good because I like to entertain a lot,” he says.
+                  Construction was “challenging,” but as Morrow explains, his approach breaks down into simple steps:
+                </p>
+                <a href="article.html" class="button-round w-button">Continue reading →</a>
+              </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 lawn">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/03-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-                  <div class="hover-text">
-                    <h4>Lorem Ipsum</h4>
-                  </div>
-                  <img src="img/portfolio/03-small.jpg" class="img-responsive" alt="Project Title">
-                </a> </div>
+          <div role="listitem" class="w-dyn-item">
+            <div class="post-wrapper">
+              <div><a href="article.html" class="blog-title-link w-inline-block">
+                  <h1 class="blog-title">GROWING VEGETABLES IN SMALL SPACES </h1>
+                </a>
+                <div class="post-info-wrapper">
+                  <div class="post-info">March 4, 2021</div>
+
+                </div>
+                <p class="post-summary">Is your garden bed a twin size versus a king? Or maybe you have no land at all,
+                  and only a tiny balcony or patio. No problem. As long as you can find a sunny location, either on the
+                  ground or in mid-air, you can satisfy your appetite for freshly picked produce.
+                  “Almost everyone has access to more space than they realize. It just takes a little creative thinking
+                  to see it,” says Andrea Bellamy, in her book Small-Space Vegetable Gardens. A rooftop, alleyway, front
+                  porch, and even a fire escape are all viable spots for growing vegetables. The keys to success are
+                  careful planning and making the most of what you’ve got.</p>
+                <a href="article.html" class="button-round w-button">Continue reading →</a>
+              </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 lawn">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/04-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-                  <div class="hover-text">
-                    <h4>Lorem Ipsum</h4>
-                  </div>
-                  <img src="img/portfolio/04-small.jpg" class="img-responsive" alt="Project Title">
-                </a> </div>
+          <div role="listitem" class="w-dyn-item">
+            <div class="post-wrapper">
+              <div><a href="article.html" class="blog-title-link w-inline-block">
+                  <h1 class="blog-title">CONTAINER GARDEN IDEAS</h1>
+                </a>
+                <div class="post-info-wrapper">
+                  <div class="post-info">March 3, 2021</div>
+
+                </div>
+                <p class="post-summary"> Container gardens are great for beginning gardeners, people who have limited
+                  space, or anyone who wants to dress up their porch or patio. They can be planted with a single plant
+                  or a combination of plants depending on the look you are trying to achieve. Popular plants for
+                  containers include flowers, herbs, veggies, grasses and succulents. Many gardeners switch out the
+                  plants they grow seasonally to ensure nonstop color throughout the year.</p>
+                <a href="article.html" class="button-round w-button">Continue reading →</a>
+              </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 planting">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/05-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-                  <div class="hover-text">
-                    <h4>Adipiscing Elit</h4>
-                  </div>
-                  <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="Project Title">
-                </a> </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 garden">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/06-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-                  <div class="hover-text">
-                    <h4>Dolor Sit</h4>
-                  </div>
-                  <img src="img/portfolio/06-small.jpg" class="img-responsive" alt="Project Title">
-                </a> </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 garden">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/07-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-                  <div class="hover-text">
-                    <h4>Dolor Sit</h4>
-                  </div>
-                  <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="Project Title">
-                </a> </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 lawn">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/08-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-                  <div class="hover-text">
-                    <h4>Lorem Ipsum</h4>
-                  </div>
-                  <img src="img/portfolio/08-small.jpg" class="img-responsive" alt="Project Title">
-                </a> </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 planting">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/09-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-                  <div class="hover-text">
-                    <h4>Adipiscing Elit</h4>
-                  </div>
-                  <img src="img/portfolio/09-small.jpg" class="img-responsive" alt="Project Title">
-                </a> </div>
+          <div role="listitem" class="w-dyn-item">
+            <div class="post-wrapper">
+              <div><a href="article.html" class="blog-title-link w-inline-block">
+                  <h1 class="blog-title">OUR FAVORITE FALL CONTAINER IDEAS</h1>
+                </a>
+                <div class="post-info-wrapper">
+                  <div class="post-info">March 2, 2021</div>
+
+                </div>
+                <p class="post-summary">Fall is the perfect time to try something new with your containers. While a
+                  basket of mums is a classic choice, sometimes you need a little variety. We’ve rounded up our favorite
+                  fall container plants and ideas to help inspire your creativity.</p>
+                <a href="article.html" class="button-round w-button">Continue reading →</a>
+              </div>
             </div>
           </div>
         </div>
@@ -187,9 +200,6 @@
     </div>
   </div>
 
-
-
-  <!-- Footer Section -->
   <div id="footer">
     <div class="container text-center">
       <div class="col-md-8 col-md-offset-2">
@@ -213,6 +223,7 @@
   <script type="text/javascript" src="js/owl.carousel.js"></script>
   <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+
 </body>
 
 </html>

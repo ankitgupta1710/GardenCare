@@ -38,6 +38,9 @@
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span
+            class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
         <a class="navbar-brand page-scroll" href="index.html">GardenCare</a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -75,10 +78,22 @@
           Ben Vereen
         </p>
       </div>
+
       <div class="categories">
-        <ul class="cat">
+        <ul class="cat sel-filter">
           <li>
             <ol class="type">
+              <li><a href="#" data-filter=".filter1" >Filter By Type</a></li>
+              <li><a href="#" data-filter=".filter2">Filter By Region</a></li>
+              
+            </ol>
+          </li>
+        </ul>
+      </div>
+      <div class="categories filter">
+        <ul class="cat filter1 hidden">
+          <li>
+            <ol class="type" style="padding-top: 10px;" >
               <li><a href="#" data-filter="*" class="active">All</a></li>
               <li><a href="#" data-filter=".garden">Flowers</a></li>
               <li><a href="#" data-filter=".planting">fruits</a></li>
@@ -88,53 +103,62 @@
             </ol>
           </li>
         </ul>
+        <ul class="cat filter2 hidden">
+          <select class="filter-select">
+            <option value="*" class="active">Select A Region</option>	
+            <option value=".Delhi">Delhi</option>
+            <option value=".Mumbai">Mumbai</option>
+            <option value=".Kolkata">Kolkata</option>
+            <option value=".Chennai">Chennai</option>
+          </select>
+        </ul>
         <div class="clearfix"></div>
       </div>
       <div class="row">
         <div class="portfolio-items">
-          <div class="col-sm-6 col-md-4 lawn">
+          <div class="col-sm-6 col-md-4 lawn Mumbai Delhi">
             <div class="portfolio-item">
-              <div class="hover-bg"> <a href="#" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-bg"> <a class="name" href="calla lilies.html" title="Project Title" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Hydrangeas</h4>
+                  </div>
+                  <img src="img/plants/01.png" class="img-responsive" alt="Project Title">
+                </a> </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 planting Mumbai Delhi">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a class="name" href="calla lilies.html" title="Project Title" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Peonies</h4>
+                  </div>
+                  <img src="img/plants/02.png" class="img-responsive" alt="Project Title">
+                </a> </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 lawn Chennai Mumbai">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a class="name" href='calla lilies.html' title="Project Title" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Calla Lilies</h4>
+                  </div>
+                  <img src="img/plants/03.png" class="img-responsive" alt="Project Title">
+                </a> </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 lawn  Chennai Kolkata">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a class="name" href="calla lilies.html" title="Project Title" data-lightbox-gallery="gallery1">
                   <div class="hover-text">
                     <h4>Lorem Ipsum</h4>
                   </div>
-                  <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title">
+                  <img src="img/plants/01.png" class="img-responsive" alt="Project Title">
                 </a> </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 planting">
+          <div class="col-sm-6 col-md-4 planting  Chennai Delhi">
             <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/02-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-                  <div class="hover-text">
-                    <h4>Adipiscing Elit</h4>
-                  </div>
-                  <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="Project Title">
-                </a> </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 lawn">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/03-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-                  <div class="hover-text">
-                    <h4>Lorem Ipsum</h4>
-                  </div>
-                  <img src="img/portfolio/03-small.jpg" class="img-responsive" alt="Project Title">
-                </a> </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 lawn">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/04-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-                  <div class="hover-text">
-                    <h4>Lorem Ipsum</h4>
-                  </div>
-                  <img src="img/portfolio/04-small.jpg" class="img-responsive" alt="Project Title">
-                </a> </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 planting">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/05-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-bg"> <a  class="name" href="calla lilies.html" title="Project Title" data-lightbox-gallery="gallery1">
                   <div class="hover-text">
                     <h4>Adipiscing Elit</h4>
                   </div>
@@ -142,9 +166,9 @@
                 </a> </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 garden">
+          <div class="col-sm-6 col-md-4 garden  Chennai Delhi">
             <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/06-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-bg"> <a  class="name" href="calla lilies.html" title="Project Title" data-lightbox-gallery="gallery1">
                   <div class="hover-text">
                     <h4>Dolor Sit</h4>
                   </div>
@@ -152,19 +176,19 @@
                 </a> </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 garden">
+          <div class="col-sm-6 col-md-4 garden Mumbai Chennai">
             <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/07-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-bg"> <a  class="name" href="calla lilies.html" title="Project Title" data-lightbox-gallery="gallery1">
                   <div class="hover-text">
                     <h4>Dolor Sit</h4>
                   </div>
-                  <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="Project Title">
+                  <img src="img/plants/01.png" class="img-responsive" alt="Project Title">
                 </a> </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 lawn">
+          <div class="col-sm-6 col-md-4 lawn Mumbai Chennai">
             <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/08-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-bg"> <a  class="name" href="calla lilies.html" title="Project Title" data-lightbox-gallery="gallery1">
                   <div class="hover-text">
                     <h4>Lorem Ipsum</h4>
                   </div>
@@ -172,13 +196,13 @@
                 </a> </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 planting">
+          <div class="col-sm-6 col-md-4 planting Kolkata Chennai">
             <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/09-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-bg"> <a class="name"  href="calla lilies.html" title="Project Title" data-lightbox-gallery="gallery1">
                   <div class="hover-text">
                     <h4>Adipiscing Elit</h4>
                   </div>
-                  <img src="img/portfolio/09-small.jpg" class="img-responsive" alt="Project Title">
+                  <img src="img/plants/03.png" class="img-responsive" alt="Project Title">
                 </a> </div>
             </div>
           </div>
